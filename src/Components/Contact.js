@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { icons } from "react-icons";
 import "../App.css";
-
+import background from "./images/bmw.jpeg"
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -38,13 +39,17 @@ class Contact extends Component {
 
   render() {
     return (
-     
+        <div style={{ backgroundImage: `url(${background})` }}>
+             
+       
       <form className="form123">
+      
 
         <div>
-          <h2>Contact Me</h2>
+          <h2 icon="user">Contact Me</h2>
+    
         <br/>
-          <label>
+          <label> 
             Name :
             <input
               type="text"
@@ -69,13 +74,14 @@ class Contact extends Component {
           </label>
         </div>
         <button
-          style={{ background: "blue", borderRadius: "12px" }}
+          style={{ background: "green", borderRadius: "12px" }}
           onClick={this.onFormSubmit}
         >
           {" "}
           Submit
         </button>
       </form>
+      </div>
     );
   }
 }
