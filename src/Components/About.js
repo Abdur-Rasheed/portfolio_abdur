@@ -6,7 +6,7 @@ import React from "react";
 // import browser from "./images/browser.png";
 // import myImage from "./images/browser.png";
 // import PropTypes from "prop-types";
-import Abdur from "./images/abdurrasheed.jpeg";
+import Abdur from "./images/abdurrasheed.png";
 
 export default class About extends React.Component {
   render() {
