@@ -69,14 +69,18 @@ class Contact extends Component {
         <br />
         <div>
           <label>
+          
             Email :
             <input type="text" email="email" />
           </label>
         </div>
         <button
-          style={{ background: "green", borderRadius: "12px" }}
-          onClick={this.onFormSubmit}
+        //   onClick={this.onFormSubmit}
+          type="submit"
+          value="Submit"
+          className="btn btn-primary"
         >
+         
           {" "}
           Submit
         </button>
